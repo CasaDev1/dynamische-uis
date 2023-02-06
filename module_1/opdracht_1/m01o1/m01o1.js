@@ -10,7 +10,7 @@ if (gewenste_aantal_autos > 0){
 }
 // Berekenen hier het aantal verdiepingen
 
-let antwoord = "Ik heb nog geen idee hoeveel verdiepingen er moeten komen :-( ";
+let antwoord = "Om het gewenste aantal autos kwijt te kunnen heb ik "+verdieping+" verdiepingen nodig.";
 document.getElementById("antwoord").innerText = antwoord;
 
 console.log("Om het gewenste aantal autos kwijt te kunnen heb ik "+verdieping+" verdiepingen nodig.")
