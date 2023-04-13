@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+}
+
+button {
+    width: 20px;
+    height: 25px;
+    margin: 10px;
+    background-color: greenyellow;
+    color: whitesmoke;
+
+}
+
