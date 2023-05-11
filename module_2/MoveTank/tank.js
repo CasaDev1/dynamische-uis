@@ -4,7 +4,7 @@ let banden = 0;
 let richting = 0;
 let positiontop = 0;
 
-document.onkeydown = checkKey;
+document.onkeydown = checkKey; // kijkt wat voor knoppen je indrukt in dit geval pijltjes
 image.style.transform = "rotate(90deg)"
 
 function moveRight() {
