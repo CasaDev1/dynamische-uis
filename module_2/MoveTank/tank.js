@@ -21,7 +21,7 @@ function moveLeft() {
 
 function checkKey(e) {
 	console.log("key nr = " + e.keyCode);
-    e = e || window.event;
+    e = e || window.Event;
     if(e.keyCode == 32){
     	console.log("spacebar");
     } else if (e.keyCode == '38') {  // up arrow
