@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainwidth: 640px;
+    --lightcolor: white;
+    --darkcolor: gray;
+}
+  
+body{
+    background-color: silver;
+}
+h1{
+    width: var(--mainwidth);
+    text-align: center;
+    margin: 20px auto;
+    color: var(--darkcolor)
+}
+#container {
+    width: var(--mainwidth);
+    height: 440px;
+    background-color: var(--lightcolor);
+    margin: 10px auto 0;
+}
+
+footer {
+    width: var(--mainwidth);
+    text-align: center;
+    margin: 0 auto 20px;
+    height: 30px;
+    background-color: var(--darkcolor);
+    font-weight: bold;
+    color: var(--lightcolor);
+    padding-top: 10px;
+}
