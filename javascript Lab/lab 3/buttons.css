@@ -1,0 +1,15 @@
+button {
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+    margin: 0 auto;
+}
