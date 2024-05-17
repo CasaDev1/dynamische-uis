@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamepicker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gamepicker</h1>
+    </header>
+    <div id="filters">
+      <h2>Filters</h2>
+      <label for="priceFilter">Prijs lager dan:</label>
+      <input type="number" id="priceFilter" min="0" step="0.01" />
+      <button onclick="filterByPrice()">Filter op prijs</button>
+
+      <label for="genreFilter">Filter op genre:</label>
+      <select id="genreFilter">
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="RPG">RPG</option>
+        <option value="Shooter">Shooter</option>
+        <option value="Platformer">Platformer</option>
+        <option value="Puzzle">Puzzle</option>
+        <option value="Simulation">Simulation</option>
+        <option value="Strategy">Strategy</option>
+      </select>
+      <button onclick="filterByGenre()">Filter op genre</button>
+
+      <label for="ratingFilter">Rating lager dan:</label>
+      <input type="number" id="ratingFilter" min="0" max="5" step="0.1" />
+      <button onclick="filterByRating()">Filter op rating</button>
+    </div>
+
+    <div id="gameList">
+      <!-- Hier komt de lijst met spellen -->
+    </div>
+    <div id="cart" style="display: none">
+      <!-- The shopping cart content will be dynamically generated -->
+    </div>
+    <div id="addedList" style="display: none">
+      <!-- List of added games -->
+      <h2>Toegevoegde spellen</h2>
+      <ul id="addedGamesList"></ul>
+    </div>
+
+    <footer>
+      <button onclick="showGameList()">Terug naar overzicht</button>
+      <button onclick="showAddedList()">Toon toegevoegde spellen</button>
+      <button onclick="calculatePrice()">Bereken prijs</button>
+    </footer>
+
+    <script src="gamepicker.js"></script>
+  </body>
+</html>
